@@ -112,7 +112,7 @@ void LOAD_MPZ(MPZ* a, SINT8* hexdata)
 void RSA_Key_Gen(RSA_Private_Key* SK, RSA_Public_Key* PK)
 {
 	MPZ phin, one, pm1, qm1, temp;
-	// p, q »ý¼º
+	// p, q ï¿½ï¿½ï¿½ï¿½
 	LOAD_MPZ(&(SK->p), "977a34505f61feaabdfbe303802d70533a96a5c931e2a30a2eae72adb61bd57307462935db605c422f2e03435671b24a8edf2da7baa0b676d29a6c1467472a89912c616f9ca20596d93246362aa8e8c28ebb7b84834efd42c58205766d11066707090911c64806c0a75217a0195459e63c35a5301ae35454ee121533ec3f90ff");
 	LOAD_MPZ(&(SK->q), "b7dd2014ba4c4500e04fb105c96d514bb08a5bdad4d7de4e47307be1933d2fb4368b792aebc89c1322d18c278e79afa1a9076673f4a3488b56548111b0a7cc0161503275915a29cc2e86f6694d785e5757f70ae48704bcc8c22b78a9a2b6f6bdc50df73b8dcbe12e995bfdfc5adcab11932b35cb6c70552d46f2db4152359083");
 
@@ -216,7 +216,7 @@ void Load_keyparam(UINT8* buf, SINT32* bufsize, MPZ* a)
 		else
 			break;
 	}
-	size++; //bufÀÇ ÃÖ»óÀ§¹ÙÀÌÆ®¸¦ 0À¸·Î Ã¤¿ì´Â °ÍÀ» °í·Á..
+	size++; 
 
 	if (size >= 256)
 	{
@@ -249,7 +249,7 @@ void Load_keyparam_v2(UINT8* buf, SINT32* bufsize, MPZ* a)
 			size--;
 		else
 			break;
-	} //bufÀÇ ÃÖ»óÀ§¹ÙÀÌÆ®¸¦ 0À¸·Î Ã¤¿ìÁö ¾Ê´Â °ÍÀ» °í·Á..
+	} //bufï¿½ï¿½ ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½..
 
 	if (size >= 256)
 	{
